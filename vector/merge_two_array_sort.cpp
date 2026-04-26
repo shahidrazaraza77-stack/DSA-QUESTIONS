@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void merge(vector<int>& nums1, int m, vector<int>& nums2, int n,vector<int>&nums3) {
+    int i=0,j=0,k=0;
+    while (i<m&&j<n){
+        if (nums1[i]<nums2[j]){
+            nums3[k++]=nums1[i++];
+
+        }
+        else{
+            nums3[k++]=nums2[j++];
+        }
+    }
+
+    // copy first array k element
+
+    while (i<m){
+        nums3[k++]=nums1[i++];
+    }
+    
+    while (j<n){
+        nums3[k++]=nums2[j++];
+    }
+
+}
+void print(vector<int>&ans){
+   
+    for (int x:ans){
+        cout << x<< " "; 
+    }
+    cout<<endl;
+}   
+
+
+
+        
+
+int main(){
+
+    vector<int>nums1, nums2;
+
+     nums1={1,6,7,8,4};
+     nums2={2,5,4};
+     vector<int>nums3(nums1.size()+nums2.size());
+    
+    merge(nums1,nums1.size(),nums2,nums2.size(),nums3);
+
+    print(nums3);
+
+    return 0;
+
+    
+}
