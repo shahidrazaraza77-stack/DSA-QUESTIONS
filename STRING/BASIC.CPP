@@ -1,36 +1,72 @@
-#include<iostream>
-#include <algorithm>
-using namespace std ;
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+// int main(){
+//    char str[]={ 'a','b','c','d','e','f','\0'};
+//    cout<<strlen(str)<<endl;
+//    return 0;
+
+// }
+
+// int main (){
+//     char str[12];
+//     cin.getline(str,100);
+
+//     for (char ch:str){
+//         cout<< ch<< " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// int main(){
+//     char str[]="apna college ";
+//     int len=0;
+//     for (int i=0;i<str[i]!='\0';i++){
+//         len++;
+//     }
+//     cout<< "length of the string is "<< len << endl;
+//     return 0;
+
+// }     
+
+// int main(){
+//     string str1=" apna college ";
+//     string str2="hello world ";
+//     string str3=str1+str2;
+   
+    
+
+    // cout<<st<< " ";
+    
+
+// }
+
+// int main(){
+    // string  str;
+    // getline(cin,str);
+
+    // cout << "output"<< str << endl;
+
+// }
 
 int main(){
+    // string str=" apnaa college ";
 
-    // char  str[10]={'a','b','c','d','e','f'};
-
-    // cout<<" the answer is "<<int(str[2]);
-
-    // string str;
-    // getline(cin,str );
-
-    // for (int i=0;i<str.length();i++){
-    //     cout<<str[i]<<" ";
-
+    // for (int i=0; i<str.length();i++){
+    //     cout << str[i]<< endl;
     // }
-    // // cout<<str.size() <<" ";
-   
+    // cout<< endl;
+    // return 0;
 
-    string str1="aplha ";
-    string str2="intern ";
-    string str3=str1.append(str2);
-    // cout <<str1.append(str2);
-    // reverse(str3.begin(),str3.end());
 
-    // cout <<str3;
+    string str="apna college";
 
-    // cout<<str1.erase(1,3);
-    cout <<str3;
-    cout <<str3.substr(3,3);
-
+    for (char ch:str){
+        cout<<ch <<" "  ;      
+    }
+    cout<<endl;
 
 }
- 
 
